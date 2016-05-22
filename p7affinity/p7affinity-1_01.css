@@ -1,0 +1,183 @@
+/* 
+  ------------------------------------------------
+  PVII Affinity
+  Copyright (c) 2013 Project Seven Development
+  www.projectseven.com
+  01: 1 Col Flex
+  ------------------------------------------------
+*/
+
+body {
+	font-family: "Segoe UI", Optima, Helvetica, Arial, sans-serif;
+	color: #000;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+	padding-bottom: 4em;
+}
+img {
+	vertical-align: bottom;
+}
+.masthead {
+	padding: 10px 10px;
+	text-align: left;
+	background-color: #222;
+	position: relative;
+	z-index: 10;
+	box-shadow: 0px 0px 30px #000;
+}
+
+.content-wrapper {
+	margin: 4em 1.25em 0em 1.25em;
+	overflow: hidden;
+}
+.columns-wrapper {
+	overflow: hidden;
+	background-color: #FFF;
+	position: relative;
+}
+.columns-wrapper, .menu-top-wrapper {
+	max-width: 1260px;
+	margin: auto;
+}
+
+.main-content .content{
+	padding: 30px;
+	font-size: 1em;
+	line-height: 1.5em;
+	border: 1px solid;
+	border-radius: 5px;
+	border-color: #666;
+}
+
+/*Heading styles*/
+h1, h2, h3, h4 {
+	margin: 30px 0px 0px 0px;
+	font-family: Federo, "Segoe UI", Optima, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.35em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.1em; }
+
+/*A utility rule assigned to the first heading to remove top margins.*/
+.content h1:first-child,
+.content h2:first-child,
+.content h3:first-child,
+.content h4:first-child {
+	margin-top: 0px;
+}
+
+
+/*Make Image Scalable - Assign this class to any image to make it scale with the browser window size*/
+img.scalable {
+	height: auto !important;
+	width: auto !important;
+	max-width: 100%;
+	border-radius: 5px;
+}
+.fancy {
+	border: 1px solid rgba(255,255,255,.2);
+	box-shadow: 0px 0px 30px rgba(0,0,0,.65);
+}
+.sidebar ul, .sidebar ol, .sidebar2 ul, .sidebar2 ol {
+	margin: 0 0 0 .5em;
+	padding: 0 0 0 .5em;
+	line-height: normal;
+}
+.sidebar li, .sidebar2 li { 
+	margin-bottom: 4px; 
+}
+
+/*Ordinary Link Styles*/
+.content a {
+	color: #002953;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+}
+.content a:hover, .content a:focus {
+	color: #000;
+	border-bottom-style: solid;
+}
+.footer a {
+	color: #8C8C8C;
+}
+.footer a:hover, .footer a:focus { color: #FFF; }
+
+
+/*The DIVs that contains the horizontal menu bar at the top of your page.*/
+.menu-top-wrapper .p7DMM01 {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+.top-navigation {
+	background-color: #7BA4C1;
+	border-bottom: 1px solid #FFF;
+	box-shadow: 0px 0px 30px #999;
+	position: relative;
+	z-index: 9;
+}
+.top-navigation:after {
+	content: "\0020";
+	font-size: 0px;
+	display: inline;
+	overflow: hidden;
+	line-height: 0;
+	clear: both;
+}
+
+/*The Footer*/
+.footer {
+	background-color: #222;
+	box-shadow: inset 0px 16px 2px rgba(255,255,255,.025);
+	border-top: 1px solid #000;
+	padding: 15px 15px;
+	font-size: 0.7em;
+	color: #8C8C8C;
+	text-align: center;
+	clear: both;
+	position: fixed;
+	z-index: 999;
+	top: auto;
+	bottom: 0px;
+	width: 100%;
+}
+.footer p.copyright {
+	text-transform: uppercase;
+	margin: 0px;
+}
+
+
+/*1 Column for Narrow Browser Windows and Smartphones in both orientations*/
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+body {
+	padding-bottom: 0px;
+}
+.footer {
+	position: static;
+	width: auto;
+}
+.content-wrapper, .columns-wrapper {margin: 0px; border: none;}
+.main-content .content {
+	padding: 20px 10px;
+	border: none;
+}
+.p7DMM01 ul a, .p7DMM01 ul a:hover, .p7DMM01 ul a:focus, .p7DMM01 ul a.open {
+	border-bottom: 1px solid !important;
+	border-color: #89AEC9 !important;
+}
+.p7DMM01 ul li:last-child a {
+	border-bottom: none !important;
+}
+}
+/*Medium windows - reduce padding content padding*/
+@media only screen and (min-width: 700px) and (max-width: 1280px) {
+.main-content .content {padding: 10px 20px;}
+.top-navigation {padding: 0px 10px;}
+.content-wrapper {margin-left: 10px; margin-right: 10px;}
+
+}

@@ -1,0 +1,123 @@
+/*
+ ----------------------------- 
+ PVII Show More / Show Less
+ by Project Seven Development
+ www.projectseven.com
+ Core CSS
+ -----------------------------
+*/
+
+/* ----------- <a> tag triggers ----------- */
+
+/* block */
+a.sml-more {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	font-style: normal;
+	border-bottom: 1px dotted;
+	border-color: #000;
+	transition: all linear .5s .1s;
+}
+a.sml-more.open {
+	color: #000;
+}
+a.sml-more:hover {
+	border-bottom-style: solid;
+}
+a.sml-more.tabbed {
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	font-style: normal;
+	border: 1px solid;
+	border-color: #000;
+	border-top-style: hidden;
+	border-bottom-style: solid;
+	padding: .5em 1em;
+	border-radius: 0px 0px 5px 5px;
+}
+
+a.sml-more.tabbed:hover, a.sml-more.tabbed.open {
+	border-top-style: hidden;
+	border-bottom-style: solid;
+	background-color: #222;
+	color: #FFF;
+}
+
+a.sml-more.button {
+	color: #000000;
+	background-color: #DDD;
+	text-decoration: none;
+	display: inline-block;
+	font-style: normal;
+	border: 1px solid;
+	border-color: #AAA;
+	padding: 1em;
+	border-radius: 5px;
+}
+
+a.sml-more.button:hover, a.sml-more.button.open {
+	background-color: #222;
+	border-color: #222;
+	color: #FFF;
+}
+
+
+/* inline */
+a.sml-more-inline, a.sml-less-inline {
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	font-style: normal;
+	border-bottom: 1px dotted;
+	border-color: #000;
+	font-weight: bold;
+}
+a.sml-more-inline:hover, a.sml-less-inline:hover {
+	border-bottom-style: solid;
+}
+
+.sml-content.indented {
+	width: 90%;
+	margin: auto;
+	padding-left: 1em;
+	border-left: 1px dotted;
+}
+
+/* fixed height reveal */
+.sml-blur {
+	height: 50px;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	background: -webkit-linear-gradient(rgba(255,255,255,.5) 0%, rgba(255,255,255,1) 80%);
+	background: linear-gradient(rgba(255,255,255,.5) 0%, rgba(255,255,255,1) 80%);
+}
+.sml-content.fixed-reveal {
+	position:relative;
+}
+
+
+
+/* ---------- DO NOT EDIT EVER ----------------- */
+
+/* Block Contnent */
+.sml-content {
+	display: block; 
+	height: 0px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.sml-content div {
+	padding: 1px 0px;
+}
+
+
+/* inline content */
+.sml-content-inline {
+    display: inline;
+}
+
+

@@ -1,0 +1,151 @@
+/* 
+  -----------------------------------
+  Accordion Panel Magic
+  by Project Seven Development
+  www.projectseven.com
+  Style Theme: 03 - Greystone
+  -----------------------------------
+*/
+
+.p7AP3-03 {
+	background-color: #333333;
+	padding: 6px;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #666666;
+	border-top: 1px solid #666666;
+	margin: 0 auto;
+	width: auto;
+}
+.p7AP3:after {
+	content: "\0020";
+	font-size: 0px;
+	display: inline;
+	overflow: hidden;
+	line-height: 1;
+}
+.p7AP3trig.p7ap3-theme-03 {
+	margin: 0;
+	padding: 0;
+	background-color: #949494;
+}
+.p7AP3trig.p7ap3-theme-03 h3, .p7AP3trig.p7ap3-theme-03 h4 {
+	margin: 0;
+	padding: 0;
+	letter-spacing: normal;
+	font-size: 1em;
+}
+.p7AP3trig.p7ap3-theme-03 a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #333;
+	font-weight: normal;
+	background-image: url(img/p7ap3_east_black.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	border-bottom: 1px solid #7A7A7A;
+	border-top: 1px solid #B6B6B6;
+	box-shadow: inset 0px 10px 16px rgba(255,255,255,.1);
+	-webkit-transition: all linear 0.15s 0.1s;
+	transition: all linear 0.15s 0.1s;
+}
+.p7AP3trig.p7ap3-theme-03 .p7AP3_ext, .p7AP3trig.p7ap3-theme-03 .p7AP3_ext.p7AP3trig_down {
+	background-image: url(img/p7ap3_page_black.gif);
+	background-color: transparent;
+	border-bottom: 1px solid #7A7A7A;
+	border-top: 1px solid #B6B6B6;
+	color: #333;
+	letter-spacing: 0.1em;
+}
+.p7AP3trig.p7ap3-theme-03 .p7AP3_ext:hover {
+	background-image: url(img/p7ap3_page_gray.gif) !important;
+}
+.p7AP3trig.p7ap3-theme-03 a:hover {
+	color: #EEE;
+	background-color: #000;
+	border-color: #000;
+	background-image: url(img/p7ap3_east_gray.gif);
+}
+.p7AP3trig.p7ap3-theme-03 a:focus {}
+.p7AP3trig.p7ap3-theme-03 .p7AP3trig_down, .p7AP3trig.p7ap3-theme-03 .p7AP3trig_down:hover {
+	letter-spacing: 0.1em;
+	background-image: url(img/p7ap3_south_gray.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-color: #4E4E4E;
+	color: #FFF;
+	border-color: #4E4E4E;
+}
+.p7AP3trig.p7ap3-theme-03 .p7AP3trig_down:hover {
+	color: #FFF;
+}
+.p7AP3cwrapper.p7ap3-theme-03 {
+	position: relative;
+}
+.p7AP3panelcontent.p7ap3-theme-03 {
+	line-height: 1.5em;
+	background-image: url(img/p7ap3_bevel_white.jpg);
+	background-repeat: repeat-x;
+	background-color: #FFF;
+	color: #000;
+}
+.p7AP3panelcontent.p7ap3-theme-03 h1,
+.p7AP3panelcontent.p7ap3-theme-03 h2,
+.p7AP3panelcontent.p7ap3-theme-03 h3,
+.p7AP3panelcontent.p7ap3-theme-03 h4 {
+	margin: 0px;
+}
+.p7AP3content.p7ap3-theme-03 p {
+	margin: 6px 0;
+}
+.p7AP3trig.p7ap3-theme-03 a.current_mark, .p7AP3trig.p7ap3-theme-03 a.current_mark:hover {
+	font-weight: bold;
+}
+.p7AP3panelcontent.p7ap3-theme-03 .current_mark {
+	font-weight: bold;
+}
+
+.p7AP3-03.responsive .ap3-toolbar {
+	display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+.p7AP3-03.responsive .ap3-toolbar {
+	display: block;
+	padding: 0px 10px;
+	text-align: right;
+	cursor: pointer;
+}
+.p7AP3-03.responsive .ap3-toolbar a {
+	font-size: 2em;
+	font-weight: bold;
+	color: #999;
+	text-decoration: none;
+	display: block;
+}
+.p7AP3-03.responsive .ap3-toolbar a:hover {
+	color: #FFF;
+}
+.responsive .toggle-text a:before {
+	position: relative;
+	top: -.25em;
+}
+.p7AP3-03.responsive .toggle-text.closed a:before {
+	content: "Show Menu \0020";
+	font-size: .5em;
+}
+.p7AP3-03.responsive .toggle-text.opened a:before {
+	content: "Hide Menu \0020";
+	font-size: .5em;
+}
+.p7AP3root-wrapper.closed {
+	height: 0px;
+	overflow:hidden;	
+}
+.p7AP3root-wrapper.opened {
+	height: auto;
+	overflow: hidden;	
+}
+
+}

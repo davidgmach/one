@@ -1,0 +1,80 @@
+/* 
+  -----------------------------------
+  Elevator Panels
+  by Project Seven Development
+  www.projectseven.com
+  Style Theme: 04 - Carbon
+  -----------------------------------
+*/
+.p7EPM04 {
+	background-color: #989898;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: inherit;
+	border-bottom: 1px solid #000000;
+}
+.p7EPM04 .p7epm_trigs {
+	overflow: hidden;
+	background-color: #989898;
+}
+.p7EPM04 .p7epm_trigs ul {
+	margin: 0px;
+	padding: 0px;
+}
+.p7EPM04 .p7epm_trigs li {
+	list-style-type: none;
+	float: left;
+	padding-bottom: 0px;
+	background-repeat: repeat-x;
+	margin: 0 0 0 0;
+}
+.p7EPM04 .p7epm_trigs a {
+	color: #000000;
+	padding: 4px 10px;
+	line-height: 1.5em;
+	float: left;
+	display: block;
+	text-decoration: none;
+	background-color: #989898;
+	border-top: 1px solid #A7A7A7;
+	border-right: 1px solid #838383;
+	border-left: 1px solid #A7A7A7;
+}
+.p7EPM04 .p7epm_trigs a:hover {
+	color: #FFFFFF;
+}
+.p7EPM04 .p7epm_content {
+	padding: 12px 24px;
+	line-height: 1.6em;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-top: 6px solid #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
+}
+.p7EPM04 .p7epm_content.pan1 {}
+.p7EPM04 .p7epm_content.pan2 {}
+.p7EPM04 .p7epm_content.pan3 {}
+.p7EPM04 .p7epm_content.pan4 {}
+.p7EPM04 .p7epm_content.pan5 {}
+.p7EPM04 .p7epm_trigs .p7epm_open {
+	color: #CCCCCC !important;
+	background-color: #000000 !important;
+	border-color: #000000;
+}
+.p7EPM04 .p7epm_trigs .t1 .p7epm_open {}
+.p7EPM04 .p7epm_trigs .t2 .p7epm_open {}
+.p7EPM04 .p7epm_trigs .t3 .p7epm_open {}
+.p7EPM04 .p7epm_trigs .t4 .p7epm_open {}
+.p7EPM04 .p7epm_trigs .t5 .p7epm_open {}
+.p7EPM04 .p7epm_ie5clear {
+	font-size: 0;
+	height: 0;
+	line-height: 0.0;
+}
+/*Current Marker Styles*/
+.p7EPM04 .p7epm_trigs a.current_mark {
+	font-weight: bold;
+}
+.p7EPM04 .p7epm_content a.current_mark {
+	font-weight: bold;
+}
