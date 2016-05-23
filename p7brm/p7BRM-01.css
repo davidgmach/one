@@ -1,0 +1,99 @@
+/* 
+  -----------------------------------
+  Background Image Rotator Magic
+  by Project Seven Development
+  www.projectseven.com
+  Style Theme: 1 - Basic
+  -----------------------------------
+*/
+
+.p7BRM { display: none; }
+.p7BRM-01.p7brm-toolbar {
+	position: fixed;
+	z-index: 999;
+	display: none;
+	overflow: hidden;
+	padding: 0;
+}
+.p7BRM-01.p7brm-toolbar.top-right {
+	top: 10px;
+	right: 20px;
+}
+.p7BRM-01.p7brm-toolbar.bottom-right {
+	bottom: 10px;
+	right: 20px;
+}
+.p7BRM-01.p7brm-toolbar ul {
+	margin: 0px;
+	padding: 0px;
+}
+.p7BRM-01.p7brm-toolbar li {
+	list-style-type: none;
+	float: left;
+}
+.p7brm-toolbar a {
+	text-decoration: none;
+	display: block;
+	opacity: .5;
+	background-repeat: no-repeat;
+	font-size: 0px;
+	width: 22px;
+	height: 38px;
+}
+.p7brm-toolbar a.previous { background-image: url(img/p7brm-left-light.png); }
+.p7brm-toolbar a.next { background-image: url(img/p7brm-right-light.png); }
+.p7brm-toolbar a.pause.play {
+	background-image: url(img/p7brm-pause-light.png);
+	width: 35px;
+}
+.p7brm-toolbar a.pause.play.tb-play {
+	background-image: url(img/p7brm-play-light.png);
+	width: 35px;
+}
+
+.p7brm-toolbar.dark a.previous { background-image: url(img/p7brm-left-dark.png); }
+.p7brm-toolbar.dark a.next { background-image: url(img/p7brm-right-dark.png); }
+.p7brm-toolbar.dark a.pause.play {
+	background-image: url(img/p7brm-pause-dark.png);
+	width: 35px;
+}
+.p7brm-toolbar.dark a.pause.play.tb-play {
+	background-image: url(img/p7brm-play-dark.png);
+	width: 35px;
+}
+.p7brm-toolbar.dark a.fore-back {
+	background-image: url(img/p7brm-background-dark.png);
+	width: 44px;
+}
+.p7brm-toolbar.light a.fore-back {
+	background-image: url(img/p7brm-background-light.png);
+	width: 44px;
+}
+.p7brm-toolbar.light a.fore-back.foreground {
+	background-image: url(img/p7brm-foreground-light.png);
+	width: 44px;
+}
+.p7brm-toolbar.dark a.fore-back.foreground {
+	background-image: url(img/p7brm-foreground-dark.png);
+	width: 44px;
+}
+.p7BRM-01.p7brm-toolbar {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+}
+.p7BRM-01.p7brm-toolbar.foreground {
+	border-radius: 6px;
+	overflow: hidden;
+	padding: 10px;
+}	
+.p7BRM-01.p7brm-toolbar.light.foreground {
+	background-color: rgba(0,0,0,.5);
+}
+.p7BRM-01.p7brm-toolbar.dark.foreground {
+	background-color: rgba(255,255,255,.5);
+}		
+
+
+.p7brm-toolbar a:hover {
+	opacity: 1;
+}
